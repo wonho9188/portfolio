@@ -663,7 +663,9 @@ $content-width-sm: 600px;
     align-items: center;
     justify-content: center;
     gap: 24px;
-    background-color: rgb(9, 20, 66, 0.6);
+    background-color: rgba(11, 39, 99, 0.5);
+    backdrop-filter: blur(4px);
+
     &-wrap {
       @include image('section6-bg.png');
       width: 100%;
@@ -1541,10 +1543,27 @@ $content-width-sm: 600px;
     height: 60px;
     padding: 0 20px 0 15px;
     &-left {
-      scale: 0.8;
+      .logo {
+        &-w {
+          width: 25px;
+          height: 17px;
+        }
+        &-o {
+          width: 17px;
+          height: 18px;
+        }
+        &-n {
+          width: 15px;
+          height: 17px;
+        }
+        &-h {
+          width: 15px;
+          height: 17px;
+        }
+      }
     }
     &-right {
-      font-size: 18px;
+      font-size: 16px;
     }
     &.scrolled {
         height: 55px;
@@ -1904,6 +1923,26 @@ $content-width-sm: 600px;
 
   .footer {
     padding: 20px 30px;
+    &-left {
+      .logo {
+        &-w {
+          width: 25px;
+          height: 17px;
+        }
+        &-o {
+          width: 17px;
+          height: 18px;
+        }
+        &-n {
+          width: 15px;
+          height: 17px;
+        }
+        &-h {
+          width: 15px;
+          height: 17px;
+        }
+      }
+    }
     &-right {
       font-size: 14px;
     }

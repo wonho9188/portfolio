@@ -4,13 +4,8 @@ import { motion } from "framer-motion";
 import './assets/css/index.scss';
 
 import thesis_img1 from './assets/image/thesis-img1.png';
-import thesis_img2_1 from './assets/image/thesis-img2-1.png';
-import thesis_img2_2 from './assets/image/thesis-img2-2.png';
-import thesis_img2_3 from './assets/image/thesis-img2-3.png';
-import thesis_img2_4 from './assets/image/thesis-img2-4.png';
-import thesis_img3_1 from './assets/image/thesis-img3-1.png';
-import thesis_img3_2 from './assets/image/thesis-img3-2.png';
-import thesis_img3_3 from './assets/image/thesis-img3-3.png';
+import thesis_img2 from './assets/image/thesis-img2.png';
+import thesis_img3 from './assets/image/thesis-img3.png';
 
 const Header = () => {
   const [scrollPosition, setScrollPosition] = React.useState(0);
@@ -28,13 +23,14 @@ const Header = () => {
   return (
     <div className={`header ${scrollPosition > 1 ? 'scrolled' : ''}${scrollPosition > screenHeight ? '2' : ''}`}>
       <a href='' className='header-left'>
-        <span className='logo-k'/>
-        <span className='logo-g'/>
-        <span className='logo-u'/>
+        <span className='logo-w'/>
+        <span className='logo-o'/>
+        <span className='logo-n'/>
+        <span className='logo-h'/>
+        <span className='logo-o o2'/>
       </a>
       <div className='header-right'>
-        {/* choiji1995@naver.com */}
-        kwin0125@naver.com
+        wonho9188@naver.com
       </div>
     </div>
   )
@@ -50,7 +46,7 @@ const MainBanner = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            A Future <div className='sm-break'/> Where  We Live
+            Redefining <div className='sm-break'/> Robotics by
           </motion.div>
           <motion.div 
             className='main-banner-title-top-2'
@@ -58,7 +54,7 @@ const MainBanner = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5}}
           >
-            Healthier <div className='sm-break'/> and Happier
+            Reimagining <div className='sm-break'/> Beauty
           </motion.div>
         </div>
         <motion.div 
@@ -67,8 +63,8 @@ const MainBanner = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1}}
         >
-          <div>치유의 새로운 길, 건강한 삶이 &nbsp;</div>
-          <div>함께하는 미래를 꿈꿉니다.</div>
+          <div>로봇 개발의 새로운 미래. &nbsp; <br/>
+          움직이는 것에서, 보여지는 것까지.</div>
         </motion.div>
       </div>
     </div>
@@ -94,8 +90,8 @@ const Section1 = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            KGU는 모든 사람의 <br/>
-            더 나은 건강과 행복을 위해 연구합니다.
+            WONHO는 기술적 섬세함과 <div className='sm-break'/> <div className='md-break'/> 심미적 아름다움의 <br/>
+            완벽한 융합을 추구합니다.
           </motion.div>
         </div>
         <div className='section1-bot'>
@@ -107,11 +103,11 @@ const Section1 = () => {
           >
             <span className='img'/>
             <div>
-              <div>치유 중심 연구</div>
+              <div>문서 설계</div>
               <div>
-                인류 건강과 복지 증진에 <br/>
-                기여하는 것을 <br/>
-                목표로 합니다.
+                Jira / Confluence로 <br/>
+                팀원들과 소통하고 <br/>
+                아키텍쳐를 설계합니다.
               </div>
             </div>
           </motion.div>
@@ -123,11 +119,11 @@ const Section1 = () => {
           >
             <span className='img'/>
             <div>
-              <div>문제 해결</div>
+              <div>SW 개발</div>
               <div>
-                도전적인 과제 속에서도 <br/>
-                창의적인 접근으로 <br/>
-                문제를 해결합니다.
+                Python / C++ 을 <br/>
+                활용한 서버 구축 및 <br/>
+                ROS2 통신을 구현합니다.
               </div>
             </div>
           </motion.div>
@@ -139,11 +135,11 @@ const Section1 = () => {
           >
             <span className='img'/>
             <div>
-              <div>커뮤니케이션</div>
+              <div>2D 3D 디자인</div>
               <div>
-                팀 내에 협업과 연구 성과를 <br/>
-                분명하게 이해하고 <br/>
-                명확하게 전달합니다.
+                피그마로 UI를 디자인하고 <br/>
+                블렌더로 모델링과 <br/>
+                3D 프린팅 HW 제작합니다.
               </div>
             </div>
           </motion.div>
@@ -173,7 +169,7 @@ const Section2 = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
-              <span>About</span> KGU
+              <span>About</span> WONHO
             </motion.div>
             <motion.div
               className='section2-content-top2'
@@ -181,8 +177,8 @@ const Section2 = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
-              인류의 건강과 <div className='sm-break'/> 행복을 소망하는 연구원 <br/>
-              <span>김건욱</span>입니다.
+              창작의 아름다움을 <div className='sm-break'/> 전하는 개발자 <br/>
+              <span>최원호</span>입니다.
             </motion.div>
           </div>
           <motion.div
@@ -191,8 +187,8 @@ const Section2 = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            <div className='tag'> # 인류를 위한 치유 </div>
-            <div className='tag'> # 희망을 전하는 연구원 </div>
+            <div className='tag'> # 로직 + 디자인 = 완성 </div>
+            <div className='tag'> # 함께하는 작업 </div>
           </motion.div>
           <motion.div
             className='section2-content-bot'
@@ -200,24 +196,22 @@ const Section2 = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            인류가 더 건강하고 행복한 삶을 누릴 수 있도록. <br/>
-            치유의 길을 찾아가는 바이오 연구자입니다. <br/>
+            지난 4년간 웹 디자이너와 퍼블리셔로 일하며,  <br/>
+            제가 만든 코드가 개발 단계에서 <br/>
+            살아 움직이는 순간을 지켜봤습니다. <br/>
             <br/>
-            작은 생명의 신비에서 출발한 제 연구는 <br/>
-            더 나은 내일을 위한 소망으로 이어지고,<br/>
-            질병과 고통에서 벗어난 세상을 꿈꾸게 합니다.<br/>
+            하지만 퍼블리싱은 <b>로직 구현</b>이 아닌,<br/>
+            <u>보이는 것을 코드로 옮기는 작업</u>이었습니다.<br/>
             <br/>
-            단순한 치료를 넘어 <div className='sm-break'> </div> 사람들의 삶에 회복과 희망을  <div className='sm-break'> </div>  전하는 것을 목표로<br/>
-            매 순간 진심을 담아 <div className='sm-break'> </div> 연구에 임하고 있습니다.<br/>
+            그래서 <u>디자인 감각과 로직 구현</u>을 <br/>
+            <u>함께 살릴 수 있는 길</u>을 찾았고,<br/>
+            이는 <b>로봇 개발</b>로 이어졌습니다.<br/>
             <br/>
-            <br/>
-            과학이라는 도구로 인류에게 <div className='sm-break'> </div> 치유의 빛을 비추고<br/>
-            모두가 건강하고 풍요로운 삶을 <div className='sm-break'> </div> 누릴 수 있는 세상을 향해 나아가고자 합니다.<br/>
-            <br/>
-            <div className='accent'>연구를 통해! <div className='sm-break'> </div>건강과 행복을 꽃피우겠습니다!</div>
+            지금은 센서·모터·알고리즘을 설계하며,<br/>
+            시각적 완성도와 논리적 정밀함이 결합된 <br/>
+            <div className='accent'>‘움직이는 창조물’을 연구하고 있습니다.</div>
           </motion.div>
         </div>
-        
       </div>
     </div>
   )
@@ -232,11 +226,7 @@ const Section3 = () => {
           <div className='contents'>
             <div className='item'>
               <div>2023</div>
-              <div>연세대학교 신촌캠퍼스 <div className='sm-break'> </div> 생명공학과 석사 졸업</div>
-            </div>
-            <div className='item'>
-              <div>2021</div>
-              <div>연세대학교 미래캠퍼스 <div className='sm-break'> </div> 생명과학과 학사 졸업</div>
+              <div>상명대학교 천안캠퍼스 <div className='sm-break'> </div> 산업디자인과 학사 졸업</div>
             </div>
           </div>
         </div>
@@ -244,80 +234,102 @@ const Section3 = () => {
           <div className='title'>Skills</div>
           <div className='contents'>
             <div className='item'>
-              <div>#</div>
-              <div>Cell culture & Viability test</div>
+              <div>Dev</div>
+              <div>ROS2 / Slam & Nav</div>
             </div>
             <div className='item'>
-              <div>#</div>
-              <div>Immunocytochemistry</div>
+              <div>Dev</div>
+              <div>Python / PyQt / C++</div>
             </div>
             <div className='item'>
-              <div>#</div>
-              <div>Protein extraction & Western blot</div>
+              <div>Dev</div>
+              <div>OpenCV / Matplotlib</div>
             </div>
             <div className='item'>
-              <div>#</div>
-              <div>Pyruvate kinase activity test</div>
+              <div>Dev</div>
+              <div>C++ / C++Qt</div>
             </div>
             <div className='item'>
-              <div>#</div>
-              <div>Ex vivo vibrissa assay</div>
+              <div>Dev</div>
+              <div>HTML / CSS / JavaScript / TypeScript </div>
             </div>
             <div className='item'>
-              <div>#</div>
-              <div>H&E staining</div>
+              <div>Dev</div>
+              <div>React / Chart.js / Ag-Grid</div>
             </div>
             <div className='item'>
-              <div>#</div>
-              <div>PCR</div>
+              <div>3D</div>
+              <div>Blender 3D</div>
             </div>
             <div className='item'>
-              <div>#</div>
-              <div>Pipette</div>
+              <div>UI</div>
+              <div>Figma / Illustrator / Photoshop / ClipStudio</div>
             </div>
             <div className='item'>
-              <div>#</div>
-              <div>Optical & Confocal microscope</div>
+              <div>Communication</div>
+              <div>Git / Jira / Confluence</div>
             </div>
           </div>
         </div>
         <div className='section3-content'>
-          <div className='title'>Papers</div>
+          <div className='title'>Work History</div>
           <div className='contents'>
-            <div className='item'>
-              <div>
-                <p> Cells </p>
-                <p>2023-02</p>  
-              </div>
-              <div>CXXC5 Mediates DHT-Induced Androgenetic Alopecia via PGD2 </div>
+            <div className='item company'>
+              넥스트리 (22.09 ~ 24.10)
             </div>
             <div className='item'>
               <div>
-                <p>Pharmaceutics</p>
-                <p>2023-07</p>
+                <p> 22.09 ~ 24.10 </p>
               </div>
-              <div>Pyruvate kinase M2 Accelerates Cutaneous Wound Healing via Glycolysis and Wnt/β-Catenin Signaling </div>
+              <div>삼성 E&A : 4개 프로젝트, 7개 사이트</div>
             </div>
             <div className='item'>
               <div>
-                <p>International Journal <br/> of Molecular Sciences</p>
-                <p>2023-07</p>
+                <p>22.09 ~ 24.06</p>
               </div>
-              <div>KY19382 Accelerates Cutaneous Wound Healing via Activation of the Wnt/β-Catenin Signaling Pathway </div>
+              <div>SK : 1개 프로젝트 </div>
             </div>
             <div className='item'>
               <div>
-                <p>Pharmaceutics</p>
-                <p>2023-02</p>
+                <p>23.05 ~ 23.08</p>
               </div>
-              <div>Pyruvate Kinase M2 Promotes Hair Regeneration by Connecting Metabolic and Wnt/β-Catenin Signaling </div>
+              <div>동아사이언스 : 1개 프로젝트 </div>
             </div>
             <div className='item'>
               <div>
-                <p>BMB reports </p>
-                <p>2022-12</p>
+                <p>23.02 ~ 23.06</p>
               </div>
-              <div>Wnt/β-catenin signaling activator restores hair regeneration suppressed by diabetes mellitus </div>
+              <div>서울아산병원 : 1개 프로젝트 </div>
+            </div>
+            <div className='item'>
+              <div>
+                <p>22.09 ~ 22.12</p>
+              </div>
+              <div>AJ : 1개 프로젝트 </div>
+            </div>
+            <div className='item'>
+              <div>
+                <p>24.07 ~ 24.10</p>
+              </div>
+              <div>Edu-Lime : 1개 프로젝트, 2개 사이트 </div>
+            </div>
+            <div className='item'>
+              <div>
+                <p>24.01 ~ 24.10</p>
+              </div>
+              <div>Vizend : 1개 프로젝트 </div>
+            </div>
+            <div className='item'>
+              <div>
+                <p>23.06 ~ 23.07</p>
+              </div>
+              <div>디자인시스템 : 1개 프로젝트 </div>
+            </div>
+            <div className='item'>
+              <div>
+                <p>22.09 ~ 24.10</p>
+              </div>
+              <div>유튜브 나무소리 : 교육 영상 운영 </div>
             </div>
           </div>
         </div>
@@ -330,16 +342,30 @@ const Section4 = () => {
     <div className='section4-wrap'>
       <div className='section4'>
         <div className='section4-content'>
-          <div className='title'>Patent</div>
+          <div className='title'>Etc.</div>
           <div className='contents'>
             <div className='item'>
               <div>
-                최강열•류영찬•김건욱 <br/>
-                (10-2023-0015930)
+                25.02 ~ 25.08
               </div>
               <div>
-                인디루빈 유도체 및 대사활성화제를 포함하는 탈모 방지 또는 발모 촉진용 조성물 <br/> 
-                2023-02-07
+                에드인에듀 ROS2 9기 국비교육과정 수료
+              </div>
+            </div>
+            <div className='item'>
+              <div>
+                18.06 ~ 20. 02
+              </div>
+              <div>
+                7포병여단 병장 만기 전역
+              </div>
+            </div>
+            <div className='item'>
+              <div>
+                16.01 ~ 16.11
+              </div>
+              <div>
+                중계 피플 미술학원 입시반 보조강사
               </div>
             </div>
           </div>
@@ -356,14 +382,42 @@ const Section5 = () => {
       <div className='section5'>
         <div className='section5-top'>
           <div className='section5-top1' >
-            Graduation Thesis
+            Project Highlights
           </div>
           <div className='section5-top2' >
             <div> 
-              <b>모유두세포와 모델 마우스를 통한 </b>
-              <b>L-serine의 탈모 개선 효과 연구 </b> 
+              {
+                current == 1 ?
+                <>
+                  <b> ROS2 프로젝트 </b>
+                  <b>- 대형병원 안내 로봇 시스템 </b> 
+                </>
+                :
+                current == 2 ?
+                <>
+                  <b> Deep Learning 프로젝트  </b>
+                  <b>- 무인매장 CCTV 단속 시스템 </b>
+                </>
+                :
+                current == 3 ?
+                <>
+                  <b> IoT Learning 프로젝트  </b>
+                  <b>- 자동 물류 시스템 </b>
+                </>
+                : <> </>
+              }
             </div>
-            <div> L-Serine accelerates hair regrowth by stimulating dermal papilla cells and activating hair follicle stem cells </div>
+            {
+              current == 1 ?
+              <div> 관리자 GUI 대쉬보드(실시간 로봇 위치 및 카메라) 화면 </div>
+              :
+              current == 2 ?
+              <div> 매장주인 GUI 통계 시각화 화면 </div>
+              :
+              current == 3 ?
+              <div> 일반인 이해를 위한 간소화 시나리오 PPT </div>
+              : <></>
+            }
           </div>
         </div>
         <div className='section5-bot'>
@@ -391,76 +445,18 @@ const Section5 = () => {
               <div className='box'>
                 <div className='img-box-wrap'>
                   <div className='img-box'>
-                    <img src={thesis_img2_1} alt='thesis1'/>
-                  </div>
-                  <div className='desc'>
-                    Cell viability test
+                    <img src={thesis_img2} alt='thesis2'/>
                   </div>
                 </div>
-                <div className='img-box-wrap'>
-                  <div className='img-box'>
-                    <img src={thesis_img2_2} alt='thesis1'/>
-                  </div>
-                  <div className='desc'>
-                    Pyruvate kinase (PK) <br/>
-                    activity test
-                  </div>
-                </div>
-                <div className='img-box-wrap'>
-                  <div className='img-box'>
-                    <img src={thesis_img2_3} alt='thesis1'/>
-                  </div>
-                  <div className='desc'>
-                    Immunocytochemistry <br/>
-                    (ICC)
-                  </div>
-                </div>
-                <div className='img-box-wrap'>
-                  <div className='img-box'>
-                    <img src={thesis_img2_4} alt='thesis1'/>
-                  </div>
-                  <div className='desc'>
-                    Western blot
-                  </div>
-                </div>
-              </div>
-              <div className='desc'>
-                <div>Cell study에서는 모발 성장의 핵심 세포인 Dermal papilla cell(모유두세포)를 타겟으로 진행하였습니다.</div>
-                <div>인간의 primary dermal papilla cell을 사용하였고, L-serine을 처리 시에 세포의 생존율과 PK 활성 등을 평가하였습니다.</div>
-                <div>모유두세포의 활성 마커인 Versican의 활성을 평가하기 위해 ICC와 Western blot을 수행하였습니다.</div>
               </div>
             </div>
             <div className={`item ${current == 3 ? 'selected' : ''}`}>
               <div className='box'>
                 <div className='img-box-wrap'>
                   <div className='img-box'>
-                    <img src={thesis_img3_1} alt='thesis1'/>
+                    <img src={thesis_img3} alt='thesis3'/>
                   </div>
                 </div>
-                <div className='img-box-wrap'>
-                  <div className='img-box'>
-                    <img src={thesis_img3_2} alt='thesis1'/>
-                  </div>
-                  <div className='desc'>
-                    Ex vivo vibrissa culture
-                  </div>
-                </div>
-                <div className='img-box-wrap'>
-                  <div className='img-box'>
-                    <img src={thesis_img3_3} alt='thesis1'/>
-                  </div>
-                  <div className='desc'>
-                    Immunohistochemistry <br/>
-                    (IHC)
-                  </div>
-                </div>
-              </div>
-              <div className='desc'>
-                <div>
-                  L-serine의 모발 길이 성장 효과를 보기 위해 마우스의 vibrissa를 분리하여 L-serine이 담긴 media에 ex vivo culture 하였고, <br/>
-                  vibrissa 길이 성장에 대한 L-serine의 효능을 평가하였습니다.
-                </div>
-                <div>모유두세포의 활성 마커인 Versican의 활성을 평가하기 위해 culture한 vibrissa를 harvest하여 IHC를 수행하였습니다.</div>
               </div>
             </div>
           </div>
@@ -488,7 +484,7 @@ const Section6 = () => {
           transition={{ duration: 1 }}
         >
           <div>Let’s Work Together</div>
-          <div>치유의 새로운 길, 건강한 삶이 <div className='sm-break'> </div> 함께하는 미래를 꿈꿉니다.</div>
+          <div>로봇 기술의 발전, 기술적 섬세함과 <div className='sm-break'> </div> <div className='md-break'> </div> 심미적 아름다움의 완벽한 융합을 추구합니다.</div>
         </motion.div>
         <motion.div 
           className='section6-link'
@@ -496,13 +492,15 @@ const Section6 = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1}}
         >
-          <a rel="noopener noreferrer" href='https://open.kakao.com/o/sB9n62Ug' target='_blank'>
+          <a rel="noopener noreferrer" href='https://open.kakao.com/o/syIzYmLh' target='_blank'>
             <div className='button'>
               <div>WITH</div>
               <div className='logo'>
-                <span className='logo-k'/>
-                <span className='logo-g'/>
-                <span className='logo-u'/>
+                <span className='logo-w'/>
+                <span className='logo-o'/>
+                <span className='logo-n'/>
+                <span className='logo-h'/>
+                <span className='logo-o o2'/>
               </div>
               <div className='arrow'/>
             </div>
@@ -517,14 +515,16 @@ const Footer = () => {
   return (
     <div className='footer'>
       <a href='' className='footer-left'>
-        <span className='logo-k'/>
-        <span className='logo-g'/>
-        <span className='logo-u'/>
+        <span className='logo-w'/>
+        <span className='logo-o'/>
+        <span className='logo-n'/>
+        <span className='logo-h'/>
+        <span className='logo-o o2'/>
       </a>
       <div className='footer-right'>
-        Tel :  010-3441-4176 <br/>
-        Email : kwin0125@naver.com <br/>
-        Copyright 2024. KGU. All rights reserved.
+        Tel :  010-9633-6788 <br/>
+        Email : wonho9188@naver.com <br/>
+        Copyright 2025. WONHO. All rights reserved.
       </div>
     </div>
   )

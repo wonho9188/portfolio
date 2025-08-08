@@ -1,8 +1,6 @@
-$primary : rgb(38, 80, 183);
-$primary50 : rgb(38, 80, 183, 0.5);
-$primary_deep: rgb(43,138,255);
-$primary_dark : rgb(56,72,111);
-$primary_dark50 : rgb(56,72,111, 0.5);
+$primary : rgb(6, 65, 193);
+$primary50 : rgb(6, 65, 193, 0.5);
+$primary_light: #7E9AD5;
 
 @mixin mask($img) {
   mask-image: url("./" + $img);
@@ -83,31 +81,45 @@ body {
   .logo {
     display: flex;
     align-items: center;
-    &-k {
-      width: 51px;
-      height: 58px;
-      background-color: $primary_dark;
-      @include mask('logo-k.svg');
+    &-w {
+      width: 55px;
+      height: 38px;
+      background-color: $primary;
+      @include mask('logo-w.svg');
       transition: 0.3s;
       margin-right: 1px;
       animation: jump1 1s infinite;
     }
-    &-g {
-      width: 53px;
-      height: 60px;
-      background-color: $primary_dark;
-      @include mask('logo-g.svg');
+    &-o {
+      width: 37px;
+      height: 39px;
+      background-color: $primary;
+      @include mask('logo-o.svg');
       transition: 0.3s;
-      margin-right: 8px;
+      margin-right: 3px;
       animation: jump2 1s infinite;
+      &.o2 {
+        background-color: $primary_light !important;
+        animation: jump2 1s infinite;
+      }
     }
-    &-u {
-      width: 49px;
-      height: 59px;
-      background-color: $primary_dark50;
-      @include mask('logo-u.svg');
+    &-n {
+      width: 32px;
+      height: 38px;
+      background-color: $primary;
+      @include mask('logo-n.svg');
       transition: 0.3s;
+      margin-right: 3px;
       animation: jump3 1s infinite;
+    }
+    &-h {
+      width: 34px;
+      height: 38px;
+      background-color: $primary_light;
+      @include mask('logo-h.svg');
+      transition: 0.3s;
+      margin-right: 3px;
+      animation: jump1 1s infinite;
     }
   }
 }

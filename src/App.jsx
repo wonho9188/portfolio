@@ -226,7 +226,7 @@ const Section3 = () => {
           <div className='contents'>
             <div className='item'>
               <div>2023</div>
-              <div>상명대학교 천안캠퍼스 <div className='sm-break'> </div> 산업디자인과 학사 졸업</div>
+              <div>상명대학교 천안캠퍼스 <div className='sm-break'> </div> 산업디자인과 학사 졸업 [학점 : 3.76]</div>
             </div>
           </div>
         </div>

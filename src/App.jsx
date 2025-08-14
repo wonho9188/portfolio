@@ -354,6 +354,14 @@ const Section4 = () => {
             </div>
             <div className='item'>
               <div>
+                20.07 ~ 22.08
+              </div>
+              <div>
+                넥스트리 웹 디자이너 & 웹 퍼블리셔 외주 알바
+              </div>
+            </div>
+            <div className='item'>
+              <div>
                 18.06 ~ 20. 02
               </div>
               <div>

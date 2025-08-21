@@ -540,6 +540,22 @@ $content-width-sm: 600px;
             color: black;
             line-height: 130%;
             font-weight: bold;
+            display: flex;
+            b:nth-child(2) {
+              margin-right: 20px;
+            }
+            p {
+              font-size: 20px;
+              color: white;
+              background-color: $primary;
+              width: fit-content;
+              height: 30px;
+              padding: 0 15px;
+              line-height: 100%;
+              display: flex;
+              align-items: center;
+              border-radius: 4px;
+            }
           }
           &:nth-child(2) {
             font-size: 24px;

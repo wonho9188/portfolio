@@ -520,6 +520,19 @@ const Section6 = () => {
   )
 }
 
+const Section7 = () => {
+  return (
+    <div className="section7">
+      <a rel="noopener noreferrer" href='https://docs.google.com/presentation/d/1E4aBUJIHhEJzeG0_lcu_MrUWmdghdf44whofGV5CPAk/edit?slide=id.p#slide=id.p' target='_blank'>
+        PPT 포트폴리오 [클릭]
+      </a>
+      <a rel="noopener noreferrer" href='https://www.notion.so/WONHO-Wanna-Be-229483ba22f88015b391db22d64e5b02' target='_blank'>
+        노션 포트폴리오 [클릭]
+      </a>
+    </div>
+  )
+} 
+
 const Footer = () => {
   return (
     <div className='footer'>
@@ -549,6 +562,7 @@ const Main = () => {
       <Section4 />
       <Section5 />
       <Section6 />
+      <Section7 />
       <Footer />
     </div>
   )

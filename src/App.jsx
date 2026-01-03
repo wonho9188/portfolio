@@ -3,6 +3,7 @@ import { HashRouter, Route, Routes } from 'react-router-dom';
 import { motion } from "framer-motion";
 import './assets/css/index.scss';
 
+import thesis_img0 from './assets/image/thesis-img0.png';
 import thesis_img1 from './assets/image/thesis-img1.png';
 import thesis_img2 from './assets/image/thesis-img2.png';
 import thesis_img3 from './assets/image/thesis-img3.png';
@@ -177,7 +178,7 @@ const Section2 = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
-              창작의 아름다움을 <div className='sm-break'/> 전하는 개발자 <br/>
+              로봇 시스템을 이해하는 <div className='sm-break'/> SW 디자이너 <br/>
               <span>최원호</span>입니다.
             </motion.div>
           </div>
@@ -196,11 +197,11 @@ const Section2 = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            지난 4년간 웹 디자이너와 퍼블리셔로 일하며,  <br/>
+            {/* 지난 4년간 웹 디자이너와 퍼블리셔로 일하며,  <br/>
             제가 만든 코드가 개발 단계에서 <br/>
             살아 움직이는 순간을 지켜봤습니다. <br/>
             <br/>
-            하지만 퍼블리싱은 <b>로직 구현</b>이 아닌,<br/>
+            하지만 디자인과 퍼블리싱은 <b>로직 구현</b>이 아닌,<br/>
             <u>보이는 것을 코드로 옮기는 작업</u>이었습니다.<br/>
             <br/>
             그래서 <u>디자인 감각과 로직 구현</u>을 <br/>
@@ -209,7 +210,23 @@ const Section2 = () => {
             <br/>
             지금은 센서·모터·알고리즘을 설계하며,<br/>
             시각적 완성도와 논리적 정밀함이 결합된 <br/>
-            <div className='accent'>‘움직이는 창조물’을 연구하고 있습니다.</div>
+            <div className='accent'>‘움직이는 창조물’을 연구하고 있습니다.</div> */}
+
+            로봇 시뮬레이터 SW 디자이너는 <br/>
+            복잡한 로봇 동작과 데이터를 <br/>
+            누구나 이해할 수 있도록 <br/>
+            시각화하는 역할이라고 생각합니다.<br/>
+            <br/>
+            저는 UI/UX 디자인 경험과 <br/>
+            ROS2 로봇 부트캠프 프로젝트를 통해<br/>
+            로봇 시스템을 이해하며, <br/>
+            사람과 로봇 사이의 <br/>
+            간극을 줄이는 UI를 설계해왔습니다.<br/>
+            <br/>
+            기술과 사용자 경험의 균형을 바탕으로, <br/>
+            처음 접하는 사용자도 신뢰하고 <br/>
+            쉽게 사용할 수 있는 <br/>
+            <div className='accent'> 로봇 시뮬레이터 UI를 만드는 것이 제 목표입니다. </div>
           </motion.div>
         </div>
       </div>
@@ -262,18 +279,33 @@ const Section3 = () => {
               <div>Blender 3D</div>
             </div>
             <div className='item'>
-              <div>UI</div>
+              <div>UI/UX</div>
               <div>Figma / Illustrator / Photoshop / ClipStudio</div>
             </div>
             <div className='item'>
               <div>Communication</div>
-              <div>Git / Jira / Confluence</div>
+              <div>Git / Jira / Confluence / Slack </div>
             </div>
           </div>
         </div>
         <div className='section3-content'>
           <div className='title'>Work History</div>
           <div className='contents'>
+            <div className='item company'>
+              시어스랩 (25.11 ~ 26.01) [재직중]
+            </div>
+            <div className='item'>
+              <div>
+                <p> 25.11 ~ 26.01 </p>
+              </div>
+              <div>제OO 로보틱스 : 주행 로봇 모니터링 웹 </div>
+            </div>
+            <div className='item'>
+              <div>
+                <p> 25.12 ~ 26.01 </p>
+              </div>
+              <div>솔OO : 2D, 3D 공간 관리 플랫폼 </div>
+            </div>
             <div className='item company'>
               넥스트리 (22.09 ~ 24.10)
             </div>
@@ -346,10 +378,18 @@ const Section4 = () => {
           <div className='contents'>
             <div className='item'>
               <div>
+                25.09 ~ 25.11
+              </div>
+              <div>
+                에드인에듀 ROS2 단기 심화 11기 수료
+              </div>
+            </div>
+            <div className='item'>
+              <div>
                 25.02 ~ 25.08
               </div>
               <div>
-                에드인에듀 ROS2 9기 국비교육과정 수료
+                에드인에듀 ROS2 9기 부트캠프 수료
               </div>
             </div>
             <div className='item'>
@@ -397,18 +437,25 @@ const Section5 = () => {
               {
                 current == 1 ?
                 <>
-                  <b> ROS2 프로젝트 </b>
-                  <b>- 대형병원 안내 로봇 시스템 </b>
-                  <p>KDT 훈련과정 최우수상</p>
+                  <b> 주행 + 로봇팔 프로젝트 </b>
+                  <b>- 원격 쇼핑 로봇 서비스 </b>
+                  <p>KDT 단기심화 최우수상</p>
                 </>
                 :
                 current == 2 ?
+                <>
+                  <b> ROS2 프로젝트 </b>
+                  <b>- 대형병원 안내 로봇 시스템 </b>
+                  <p>KDT 6개월 훈련과정 최우수상</p>
+                </>
+                :
+                current == 3 ?
                 <>
                   <b> Deep Learning 프로젝트  </b>
                   <b>- 무인매장 CCTV 단속 시스템 </b>
                 </>
                 :
-                current == 3 ?
+                current == 4 ?
                 <>
                   <b> IoT Learning 프로젝트  </b>
                   <b>- 자동 물류 시스템 </b>
@@ -418,12 +465,15 @@ const Section5 = () => {
             </div>
             {
               current == 1 ?
-              <div> 관리자 GUI 대쉬보드(실시간 로봇 위치 및 카메라) 화면 </div>
+              <div> 사용자 원격 쇼핑(지도 + 로봇 카메라 뷰) 화면 </div>
               :
               current == 2 ?
-              <div> 매장주인 GUI 통계 시각화 화면 </div>
+              <div> 관리자 GUI 대쉬보드(실시간 로봇 위치 및 카메라) 화면 </div>
               :
               current == 3 ?
+              <div> 매장주인 GUI 통계 시각화 화면 </div>
+              :
+              current == 4 ?
               <div> 일반인 이해를 위한 간소화 시나리오 PPT </div>
               : <></>
             }
@@ -445,7 +495,7 @@ const Section5 = () => {
               <div className='box'>
                 <div className='img-box-wrap'>
                   <div className='img-box'>
-                    <img src={thesis_img1} alt='thesis1'/>
+                    <img src={thesis_img0} alt='thesis1'/>
                   </div>
                 </div>
               </div>
@@ -454,12 +504,21 @@ const Section5 = () => {
               <div className='box'>
                 <div className='img-box-wrap'>
                   <div className='img-box'>
-                    <img src={thesis_img2} alt='thesis2'/>
+                    <img src={thesis_img1} alt='thesis1'/>
                   </div>
                 </div>
               </div>
             </div>
             <div className={`item ${current == 3 ? 'selected' : ''}`}>
+              <div className='box'>
+                <div className='img-box-wrap'>
+                  <div className='img-box'>
+                    <img src={thesis_img2} alt='thesis2'/>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={`item ${current == 4 ? 'selected' : ''}`}>
               <div className='box'>
                 <div className='img-box-wrap'>
                   <div className='img-box'>
@@ -470,10 +529,10 @@ const Section5 = () => {
             </div>
           </div>
           <div onClick={()=>{
-            if ( current !== 3 ) {
+            if ( current !== 4 ) {
               setCurrent(current + 1);
             }
-          }} className={`arrow-right ${current == 3 ? 'disabled' : ''}`}>
+          }} className={`arrow-right ${current == 4 ? 'disabled' : ''}`}>
             <div/>
           </div>
         </div>

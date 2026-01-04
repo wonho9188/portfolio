@@ -381,7 +381,7 @@ const Section4 = () => {
                 25.09 ~ 25.11
               </div>
               <div>
-                에드인에듀 ROS2 단기 심화 11기 수료
+                에드인에듀 ROS2 단기 심화 7기 수료
               </div>
             </div>
             <div className='item'>

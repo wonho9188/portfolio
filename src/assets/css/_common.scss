@@ -87,7 +87,23 @@ video {
 }
 
 :root {
-  color-scheme: light;
+  color-scheme: light only;
+}
+
+/* 다크모드 완전 비활성화 */
+html {
+  color-scheme: light only;
+}
+
+body {
+  color-scheme: light only;
+  background-color: white !important;
+  color: black !important;
+}
+
+/* 모든 요소에 대해 다크모드 스타일 강제 오버라이드 */
+* {
+  color-scheme: light only;
 }
 
 ol,
@@ -199,7 +215,8 @@ b {
 body {
   font-family: Pretendard, sans-serif;
   font-size: 13px;
-  color: black;
+  color: black !important;
+  background-color: white !important;
 
   a {
     color: inherit;
@@ -226,6 +243,23 @@ body {
   }
 }
 
+
+/* 시스템 다크모드에서도 강제로 밝은 테마 유지 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light only !important;
+  }
+  
+  html, body {
+    background-color: white !important;
+    color: black !important;
+  }
+  
+  * {
+    color-scheme: light only !important;
+    background-color: inherit !important;
+  }
+}
 
 .test {
   border: 1px solid red;
